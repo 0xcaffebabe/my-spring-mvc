@@ -5,5 +5,13 @@
          version="3.0">
 
     <display-name>my spring mvc application</display-name>
-
+    <servlet>
+        <servlet-name>dispatcher-servlet</servlet-name>
+        <servlet-class>wang.ismy.spring.mvc.DispatcherServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dispatcher-servlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
 </web-app>
